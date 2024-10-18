@@ -5,7 +5,7 @@ This project is used to generate random solfège (singing names) to aid in memor
 To generate the executable file (which will be saved in the `dist` folder), run the following Python command:
 
 ```bash
-pyinstaller --onefile --noconsole --add-data "Solfège/piano_C4.wav;Solfège" --add-data "Solfège/piano_D4.wav;Solfège" --add-data "Solfège/piano_E4.wav;Solfège" --add-data "Solfège/piano_F4.wav;Solfège" --add-data "Solfège/piano_G4.wav;Solfège" --add-data "Solfège/piano_A4.wav;Solfège" --add-data "Solfège/piano_B4.wav;Solfège" Random_Solfège_Generator.py
+pyinstaller --onefile --noconsole --icon="NERV.ico" --add-data "Solfège/piano_C4.wav;Solfège" --add-data "Solfège/piano_D4.wav;Solfège" --add-data "Solfège/piano_E4.wav;Solfège" --add-data "Solfège/piano_F4.wav;Solfège" --add-data "Solfège/piano_G4.wav;Solfège" --add-data "Solfège/piano_A4.wav;Solfège" --add-data "Solfège/piano_B4.wav;Solfège" Random_Solfège_Generator.py
 ```
 
 If an error occurs because the `distutils` module is not installed, it is likely because Python 3.12 has deprecated and removed `distutils` from the standard library, migrating it to `setuptools`. In Python 3.12, you may need to manually install `setuptools` or update related dependencies.
