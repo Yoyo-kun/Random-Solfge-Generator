@@ -5,7 +5,7 @@
 要生成可执行文件（将保存在 `dist` 文件夹中），运行以下 Python 命令：
 
 ```bash
-pyinstaller --onefile --noconsole --icon="NERV.ico" --add-data "Solfège/piano_C4.wav;Solfège" --add-data "Solfège/piano_D4.wav;Solfège" --add-data "Solfège/piano_E4.wav;Solfège" --add-data "Solfège/piano_F4.wav;Solfège" --add-data "Solfège/piano_G4.wav;Solfège" --add-data "Solfège/piano_A4.wav;Solfège" --add-data "Solfège/piano_B4.wav;Solfège" Random_Solfège_Generator.py
+pyinstaller --onefile --noconsole --icon="NERV.ico" --add-data "Solfège;Solfège" Random_Solfège_Generator.py
 ```
 
 如果出现错误，提示 `distutils` 模块未安装，可能是因为 Python 3.12 已弃用并移除了 `distutils`，并将其迁移至 `setuptools`。在 Python 3.12 中，你可能需要手动安装 `setuptools` 或更新相关依赖项。
